@@ -1,0 +1,7 @@
+/.settings
+/pear-src
+/target
+/.DS_Store
+/.project
+/.buildpath
+/build.properties

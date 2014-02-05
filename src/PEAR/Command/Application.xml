@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+
+<!--
+/**
+ * PEAR_Command_Application
+ *
+ * NOTICE OF LICENSE
+ * 
+ * PEAR_Command_TechDivision is free software: you can redistribute it and/or 
+ * modify it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * PEAR_Command_Application is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with PEAR_Command_Application. If not, see <http://www.gnu.org/licenses/>.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade PEAR_Command_Application 
+ * to newer versions in the future. If you wish to customize PEAR_Command_Application 
+ * for your needs please refer to http://www.techdivision.com for more information.
+ *
+ * @category   PEAR_Command
+ * @package    PEAR_Command_Application
+ * @copyright  Copyright (c) 2009 <tw@techdivision.com> Tim Wagner
+ * @license    <http://www.gnu.org/licenses/> 
+ * 			   GNU General Public License (GPL 3)
+ */
+-->
+<commands version="1.0">
+	<contents>
+		<summary>Creates the contents node in an extisting package.xml</summary>
+		<function>doContents</function>
+		<shortcut>ctnt</shortcut>
+		<options>
+			<templatefile>
+				<shortopt>T</shortopt>
+				<doc>Path to template package2.xml</doc>
+				<arg>TEMPLATEFILE</arg>
+			</templatefile>
+			<srcdir>
+				<shortopt>S</shortopt>
+				<doc>Path to source code folder.</doc>
+				<arg>SRCDIR</arg>
+			</srcdir>
+			<destinationdir>
+				<shortopt>D</shortopt>
+				<doc>Path to destination folder where to save the generated package2.xml</doc>
+				<arg>DESTINATIONDIR</arg>
+			</destinationdir>
+			<dirroles>
+                <shortopt>R</shortopt>
+                <doc>Roles configuration e.g. directory:role;directory:role;...</doc>
+                <arg>DIRROLES</arg>
+            </dirroles>
+		</options>
+		<doc>[descfile] Creates the contents node in an existing package.xml.</doc>
+	</contents>	
+</commands>
